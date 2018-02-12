@@ -28,6 +28,10 @@
 	&__left {
 		width: 33.333%;
 		display: table-cell;
+
+		@include respond(tab-land) {
+			display: none;
+		}
 	}
 
 	&__right {
@@ -52,6 +56,11 @@
 		-moz-hyphens: auto;
 		-ms-hyphens: auto;
 		hyphens: auto;
+
+		@include respond(phone) {
+			column-count: 1;
+			column-gap: 0;
+		}
 	}
 
 	// Open states
