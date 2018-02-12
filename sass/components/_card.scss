@@ -18,10 +18,18 @@
 
 		&--front {
 			background-color: $color-white;
+
+			@include respond(tab-port) {
+				border-radius: 5px 5px 0 0;
+			}
 		}
 
 		&--back {
 			transform: rotateY(180deg);
+
+			@include respond(tab-port) {
+				border-radius: 0 0 5px 5px;
+			}
 
 			&-1 {
 				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);

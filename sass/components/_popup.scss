@@ -39,6 +39,10 @@
 		display: table-cell;
 		vertical-align: middle;
 		padding: 3rem 5rem;
+
+		@include respond(phone) {
+			padding: 3rem 3rem;
+		}
 	}
 
 	&__image {
