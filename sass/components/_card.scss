@@ -157,8 +157,10 @@
 	}
 
 
-
-	@include respond(tab-port) {
+	// Cards should be one-sided not only for the small devices
+	// but also for the touch devices
+	@media only screen and (max-width: 56.25em),
+		only screen and (hover: none) {
 		height: auto;
 		border-radius: 5px;
 		background-color: $color-white;
